@@ -1,0 +1,106 @@
+	
+#container, #shell{
+	width: 30%;
+  max-width: 500px;
+	height: 600px;
+	display: block;
+	position: relative;
+	z-index: 10;
+	margin: 50px 0px;
+  cursor: pointer;
+}
+#container{
+	width: 100%;
+	transform: rotateX(70deg);
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+#shell{
+	left: 50%;
+	perspective: 1400px;
+	transform: translateX(-50%);	
+	transition: all .2s ease;
+  -webkit-transition: all .2s ease;		
+}
+.box{
+  width:100%;
+  height: 100%;  
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -webkit-backface-visibility: visible;
+  transform-origin: left;
+  transform-style: preserve-3D;
+  position: absolute;
+  top:0px; 
+  left: 0px;
+}
+div#box1{
+  background: url(https://s-media-cache-ak0.pinimg.com/736x/f0/36/f5/f036f5db887f99c0e2f1c0b7aac90f22.jpg);
+  background-size: 100% 100%;	
+  transform: rotate3d(0, 1, 0, 0deg);
+  -webkit-backface-visibility: hidden;
+  z-index: 10;
+}
+
+div#box1_back{
+  background: #FFF;
+  transform: rotate3d(0, 1, 0, 0deg);
+  z-index: 0;
+}
+.card.flipped {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+div#box2{
+  background: #00695C;	
+  transform: rotate3d(0, 1, 0, 0deg);
+  -webkit-backface-visibility: visible;
+  z-index: -1;
+}
+h1{
+  font-family: 'Satisfy', cursive;
+  font-size: 5em;
+  color: #DD3300;
+  margin:0px;
+  position: relative;
+  top: 70%;
+  display: -webkit-box;
+  width: 100%;
+  text-align: center;
+  -webkit-box-pack: center;
+  font-weight: 200;
+  -webkit-user-select: none;
+  user-select: none;
+  background: #022;
+}
+h6{
+	font-family: 'lobster', cursive;
+	font-size: 150%;
+	color: #C5E1A5;
+	margin:0px;
+	position: relative;
+	top: 60%;
+	display: -webkit-box;
+	width: 100%;
+	text-align: center;
+	-webkit-box-pack: center;
+	font-weight: 200;
+	-webkit-user-select: none;
+	user-select: none;
+  font-size: 3vh;
+}	
+
+@media screen and (max-width: 1000px) {
+  #container, #shell{
+    width: 70%;
+    max-height: 70%;
+    top: 10%;
+  }
+  h1{
+    font-size: 10vh;
+  }
+}
