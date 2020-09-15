@@ -1,0 +1,7 @@
+<section class="container">
+    <div [ngClass]="show_front ? 'card' : 'card flipped'" (click)="flip()">
+      <div class="front">1</div>
+      <div class="back">2</div>
+    </div>
+  </section>
+  <button onclick="flip()">flip the card</button>
