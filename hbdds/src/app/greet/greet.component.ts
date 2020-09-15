@@ -25,8 +25,7 @@ export class GreetComponent implements OnInit {
     console.log("called");
     document.getElementById("container").style.transform = document.getElementById("container").style.transform == "rotateX(0deg)" ? "rotateX(70deg)" : "rotateX(0deg)";
     document.getElementById("box1").style.transform = document.getElementById("box1").style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
-    document.getElementById("box1document.getElementByIdback").style.transform = document.getElementById("box1document.getElementByIdback").style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
-    document.getElementById("tn").innerHTML = document.getElementById("tn").innerHTML=="text" ? "surprise" : "text";
+    document.getElementById("box1_back").style.transform = document.getElementById("box1_back").style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
     console.log("here");
     }
 }
