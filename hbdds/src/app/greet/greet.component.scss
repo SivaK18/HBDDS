@@ -1,4 +1,20 @@
-	
+body{
+    background: #424242;
+    margin: 0px;	
+    z-index: -1;
+  }
+  p{
+    color: #888;
+    font-family: Arial;
+    font-size: 120%;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 50%;
+    margin: 10px 0px;
+    top: 0px;
+    transform: translateX(-50%);
+  }	
 #container, #shell{
 	width: 30%;
   max-width: 500px;
