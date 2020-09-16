@@ -23,7 +23,7 @@ onSubmit(value:string) {
   
   
   console.log(value);
-  if(value ==="SweDhar"){
+  if(value ==="SwethaDharni2024"){
     x.change_val()
   }
   
