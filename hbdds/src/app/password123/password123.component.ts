@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms'
 import {AppComponent} from '../app.component'
-import { ConstantsService } from '../common/services/constants.service';
+
 @Component({ 
   selector: 'app-password123',
   templateUrl: './password123.component.html',
@@ -19,12 +19,13 @@ export class Password123Component implements OnInit {
 
 
 onSubmit() { 
-  var x = new(ConstantsService);
+  var x = new(AppComponent);
   
-  var i = document.getElementById("alterEgo");
+  var i = document.getElementById("alterEgo").textContent;
   console.log(i);
+  x.show = true;
   
-   }
+}
 
 // TODO: Remove this when we're done
 
