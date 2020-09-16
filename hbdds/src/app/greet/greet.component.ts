@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreetComponent implements OnInit {
   show_front : boolean;
+  page: BigInteger;
   constructor() {  }
 
   ngOnInit(): void {
@@ -18,7 +19,7 @@ export class GreetComponent implements OnInit {
   
    container_move(){
     document.getElementById("shell").style.transform = document.getElementById("shell").style.transform == "translateX(0%)" ? "translateX(-50%)" : "translateX(0%)";
-    setTimeout("helo",500);
+    setTimeout(this.open_card,500);
     }
   
    open_card(){
@@ -28,8 +29,11 @@ export class GreetComponent implements OnInit {
     document.getElementById("box1_back").style.transform = document.getElementById("box1_back").style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
     console.log("here");
     }
-    open_card_2(){
-      document.getElementById("box2").style.transform = document.getElementById("box2").style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
-      document.getElementById("box2_back").style.transform = document.getElementById("box2_back").style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
+    open_card_2(page){
+      var front = "box" + page;
+      var back = front + "_back"
+      console.log(front);
+      document.getElementById(front).style.transform = document.getElementById(front).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
+      document.getElementById(back).style.transform = document.getElementById(back).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
     }
 }
