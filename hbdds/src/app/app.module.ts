@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { BoardComponent } from './board/board.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GreetComponent } from './greet/greet.component';
+import { Password123Component } from './password123/password123.component';
+import { ConstantComponent } from './constant/constant.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     BoardComponent,
-    GreetComponent
+    GreetComponent,
+    Password123Component,
+    ConstantComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
