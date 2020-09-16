@@ -28,4 +28,8 @@ export class GreetComponent implements OnInit {
     document.getElementById("box1_back").style.transform = document.getElementById("box1_back").style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
     console.log("here");
     }
+    open_card_2(){
+      document.getElementById("box2").style.transform = document.getElementById("box2").style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
+      document.getElementById("box2_back").style.transform = document.getElementById("box2_back").style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
+    }
 }
