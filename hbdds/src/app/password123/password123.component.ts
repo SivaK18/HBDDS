@@ -18,12 +18,14 @@ export class Password123Component implements OnInit {
 
 
 
-onSubmit() { 
+onSubmit(value:string) { 
   var x = new(AppComponent);
   
-  var i = document.getElementById("alterEgo").textContent;
-  console.log(i);
-  x.show = true;
+  
+  console.log(value);
+  if(value ==="SweDhar"){
+    x.change_val()
+  }
   
 }
 

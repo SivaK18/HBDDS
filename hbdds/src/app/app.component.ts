@@ -5,7 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'hbdds';
-  public  show:Boolean = true;
+  public static show:Boolean = false;
+  
+  change_val(){
+    document.getElementById("hidden").style.display = "none";
+    document.getElementById("SweDhar").style.display = "block";
+  }
 }
