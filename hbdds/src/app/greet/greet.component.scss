@@ -17,7 +17,7 @@
 	height: 600px;
 	display: block;
 	position: relative;
-	z-index: 10;
+	z-index: 100;
 	margin: 50px 0px;
   cursor: pointer;
 }
@@ -33,7 +33,7 @@
 	perspective: 1400px;
 	transform: translateX(-50%);	
 	transition: all .2s ease;
-  -webkit-transition: all .2s ease;		
+  -webkit-transition: all .6s ease;		
 }
 .box{
   width:100%;
@@ -52,7 +52,7 @@ div#box1{
   background-size: 100% 100%;	
   transform: rotate3d(0, 1, 0, 0deg);
   -webkit-backface-visibility: hidden;
-  z-index: 10;
+  z-index: 100;
 }
 
 div#box1_back{
@@ -60,6 +60,11 @@ div#box1_back{
   transform: rotate3d(0, 1, 0, 0deg);
   z-index: 0;
 }
+div#box2_back{
+    background: #FFF;
+    transform: rotate3d(0, 1, 0, 0deg);
+    z-index: 10;
+  }
 .card.flipped {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -70,9 +75,15 @@ div#box1_back{
 div#box2{
   background: #00695C;	
   transform: rotate3d(0, 1, 0, 0deg);
-  -webkit-backface-visibility: visible;
-  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  z-index: 90;
 }
+div#box3{
+    background: #00695C;	
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: hidden;
+    z-index: 80;
+  }
 h1{
   font-family: 'Satisfy', cursive;
   font-size: 5em;
@@ -116,3 +127,12 @@ h6{
     font-size: 10vh;
   }
 }
+.flipH {
+    transform: scale(-1, 1);
+    color: #1c87c9;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+  }
