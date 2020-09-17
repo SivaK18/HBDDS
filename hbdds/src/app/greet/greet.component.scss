@@ -12,9 +12,8 @@
     transform: translateX(-50%);
   }	
 #container, #shell{
-	width: 30%;
-  max-width: 500px;
-	height: 600px;
+  width: 27vw !important;
+	height: 40.468384074941454vw;
 	display: block;
 	position: relative;
 	z-index: 100;
@@ -46,9 +45,11 @@
   position: absolute;
   top:0px; 
   left: 0px;
+  background:url(../../assets/img/index.jpg) center no-repeat fixed;
+  background-size: cover;
 }
 div#box1{
-  background: url(https://s-media-cache-ak0.pinimg.com/736x/f0/36/f5/f036f5db887f99c0e2f1c0b7aac90f22.jpg);
+  background: url(https://s-media-cache-ak0.pinimg.com/736x/f0/36/f5/f036f5db887f99c0e2f1c0b7aac90f22.jpg) !important;
   background-size: 100% 100%;	
   transform: rotate3d(0, 1, 0, 0deg);
   -webkit-backface-visibility: hidden;
@@ -56,12 +57,12 @@ div#box1{
 }
 
 div#box1_back{
-  background: #FFF;
+  
   transform: rotate3d(0, 1, 0, 0deg);
   z-index: 0;
 }
 div#box2_back{
-    background: #FFF;
+    
     transform: rotate3d(0, 1, 0, 0deg);
     z-index: 10;
   }
@@ -73,13 +74,11 @@ div#box2_back{
   }
 
 div#box2{
-  background: #00695C;	
   transform: rotate3d(0, 1, 0, 0deg);
   -webkit-backface-visibility: hidden;
   z-index: 90;
 }
 div#box3{
-    background: #00695C;	
     transform: rotate3d(0, 1, 0, 0deg);
     -webkit-backface-visibility: hidden;
     z-index: 80;
@@ -119,8 +118,8 @@ h6{
 
 @media screen and (max-width: 1000px) {
   #container, #shell{
-    width: 70%;
-    max-height: 70%;
+    width: 70vw;
+    max-height: 104.91803278688523vw;
     top: 10%;
   }
   h1{
