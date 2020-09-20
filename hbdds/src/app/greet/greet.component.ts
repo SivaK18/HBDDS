@@ -35,5 +35,17 @@ export class GreetComponent implements OnInit {
       console.log(front);
       document.getElementById(front).style.transform = document.getElementById(front).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
       document.getElementById(back).style.transform = document.getElementById(back).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
+      this.sort_r(page);
+    }
+
+    sort_r (page){
+      for (let i = 0; i < page; i++) {
+        console.log ("page" + i);
+      }
+    }
+    sort_f(page){
+      for (let i = 0; i < page; i++) {
+        console.log ("page" + i);
+      }
     }
 }

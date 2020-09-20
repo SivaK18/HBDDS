@@ -51,40 +51,149 @@ div#box1{
   background-size: 100% 100%;	
   transform: rotate3d(0, 1, 0, 0deg);
   -webkit-backface-visibility: hidden;
-  z-index: 100;
+  z-index: 200;
 }
 
 div#box1_back{
-  background:url(../../assets/img/2024_/swe/raees.jpg) center no-repeat fixed;
+  background:url(../../assets/img/2024_/swe/bavsS.jpg) center no-repeat fixed;
   background-size: cover;
   transform: rotate3d(0, 1, 0, 0deg);
-  z-index: 0;
+  z-index: 50;
 }
-div#box2_back{
-  background:url(../../assets/img/2024_/dharu/raees.jpg) center no-repeat fixed;
-  background-size: cover;
-  transform: rotate3d(0, 1, 0, 0deg);
-  z-index: 10;
-  }
-.card.flipped {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-  }
 
 div#box2{
-  background:url(../../assets/img/2024_/dharu/ragavi.jpg) center no-repeat fixed;
+  background:url(../../assets/img/2024_/dharu/bavs.jpg) center no-repeat fixed;
   background-size: cover;
   transform: rotate3d(0, 1, 0, 0deg);
   -webkit-backface-visibility: hidden;
-  z-index: 90;
+  z-index: 190;
 }
-div#box3{
+div#box2_back{
+  background:url(../../assets/img/2024_/swe/gokuS.jpg) center no-repeat fixed;
+  background-size: cover;
+  transform: rotate3d(0, 1, 0, 0deg);
+  z-index: 45;
+  }
+  div#box3{
+    background:url(../../assets/img/2024_/dharu/goku.jpg) center no-repeat fixed;
+    background-size: cover;
     transform: rotate3d(0, 1, 0, 0deg);
     -webkit-backface-visibility: hidden;
-    z-index: 80;
+    z-index: 180;
   }
+div#box3_back{
+  background:url(../../assets/img/2024_/swe/iceS.jpg) center no-repeat fixed;
+  background-size: cover;
+  transform: rotate3d(0, 1, 0, 0deg);
+  z-index: 44;
+  }
+  div#box4{
+    background:url(../../assets/img/2024_/swe/ice_2S.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: hidden;
+    z-index: 170;
+  }
+  div#box4_back{
+    background:url(../../assets/img/2024_/dharu/ice.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    z-index: 43;
+    }
+  div#box5{
+    background:url(../../assets/img/2024_/dharu/ice_2.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: hidden;
+    z-index: 160;
+  }
+  div#box5_back{
+    background:url(../../assets/img/2024_/swe/joshahS.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    z-index: 42;
+    }
+  div#box6{
+    background:url(../../assets/img/2024_/dharu/joshah.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: hidden;
+    z-index: 150;
+  }
+  div#box6_back{
+    background:url(../../assets/img/2024_/swe/nehaS.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    z-index: 41;
+  }
+  div#box7{
+    background:url(../../assets/img/2024_/dharu/neha.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: hidden;
+    z-index: 140;
+  }
+  div#box7_back{
+    background:url(../../assets/img/2024_/swe/raeesS.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    z-index: 40;
+  }
+  div#box8{
+    background:url(../../assets/img/2024_/dharu/raees.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: hidden;
+    z-index: 130;
+  }
+  div#box8_back{
+    background:url(../../assets/img/2024_/swe/ragaviS.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    z-index: 39;
+  }
+  div#box9{
+    background:url(../../assets/img/2024_/dharu/ragavi.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: hidden;
+    z-index: 120;
+  }
+  div#box9_back{
+    background:url(../../assets/img/2024_/swe/rajS.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    z-index: 38;
+  }
+  div#box10{
+    background:url(../../assets/img/2024_/dharu/raj.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: hidden;
+    z-index: 110;
+  }
+  div#box10_back{
+    background:url(../../assets/img/2024_/swe/shreeS.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    z-index: 37;
+  }
+  div#box11{
+    background:url(../../assets/img/2024_/dharu/shree.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: hidden;
+    z-index: 100;
+  }
+  div#box11_back{
+    background:url(../../assets/img/2024_/sk.jpg) center no-repeat fixed;
+    background-size: cover;
+    transform: rotate3d(0, 1, 0, 0deg);
+    z-index: 36;
+  }
+
+
+
 h1{
   font-family: 'Satisfy', cursive;
   font-size: 5em;
