@@ -61,9 +61,10 @@ div#box1_back{
   z-index: 0;
 }
 div#box2_back{
-    
-    transform: rotate3d(0, 1, 0, 0deg);
-    z-index: 10;
+  background:url(../../assets/img/2024_/dharu/raees.jpg) center no-repeat fixed;
+  background-size: cover;
+  transform: rotate3d(0, 1, 0, 0deg);
+  z-index: 10;
   }
 .card.flipped {
     -webkit-transform: rotateY(180deg);
