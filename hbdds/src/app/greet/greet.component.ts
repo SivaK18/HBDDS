@@ -91,7 +91,7 @@ export class GreetComponent implements OnInit {
       this.pg[page_i]  = this.pg[page_i] + 1;
     }
     else{
-      this.ngOnInit();
+      //this.ngOnInit();
     }
     }
 }
