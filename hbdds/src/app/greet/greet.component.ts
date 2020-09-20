@@ -9,6 +9,7 @@ export class GreetComponent implements OnInit {
   show_front : boolean;
   show : number;
   page: BigInteger;
+  public pg : number[] = [0,0,0,0,0,0,0,0,0,0,0];
   constructor() {  
     this.show_front = true;
   }
@@ -16,6 +17,9 @@ export class GreetComponent implements OnInit {
   ngOnInit(): void {
     show_front : true;
     this.show = 0;
+    for(let i=0;i<11;i++){
+      this.pg[i]=0;
+    }
   }
   flip() {
     this.show_front = !this.show_front;
@@ -66,14 +70,17 @@ export class GreetComponent implements OnInit {
       }
     }
     sort_f(page){
-      let x = 46;
+      let page_i = page-2;
+      console.log(this.pg)
+      if(this.pg[page_i] < 1){
+      let x = 11 - page + 1;
       let values = [];
       for (let i = 0; i < page; i++) {
 
         values[i]=x;
-        x--;
+        x++;
       }
-      console.log(values);
+      console.log(this.pg[page]);
       for (let i = page; i > 0; i--){
         let y=0;
         let no_1 = "box"+i;
@@ -81,6 +88,10 @@ export class GreetComponent implements OnInit {
         document.getElementById(no).style.zIndex=values[y];
         y++;
       }
-
+      this.pg[page_i]  = this.pg[page_i] + 1;
+    }
+    else{
+      this.ngOnInit();
+    }
     }
 }
