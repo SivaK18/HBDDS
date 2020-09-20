@@ -29,13 +29,21 @@ export class GreetComponent implements OnInit {
     document.getElementById("box1_back").style.transform = document.getElementById("box1_back").style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
     console.log("here");
     }
-    open_card_2(page){
+    open_card_2_r(page){
       var front = "box" + page;
       var back = front + "_back"
       console.log(front);
       document.getElementById(front).style.transform = document.getElementById(front).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
       document.getElementById(back).style.transform = document.getElementById(back).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
-      this.sort_r(page);
+      //this.sort_f(page);
+    }
+    open_card_2_f(page){
+      var front = "box" + page;
+      var back = front + "_back"
+      console.log(front);
+      document.getElementById(front).style.transform = document.getElementById(front).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
+      document.getElementById(back).style.transform = document.getElementById(back).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
+      this.sort_f(page);
     }
 
     sort_r (page){
@@ -44,8 +52,20 @@ export class GreetComponent implements OnInit {
       }
     }
     sort_f(page){
+      let x = 46;
+      let values = [];
       for (let i = 0; i < page; i++) {
-        console.log ("page" + i);
+
+        values[i]=x;
+        x--;
       }
+      console.log(values);
+      for (let i = page; i > 0; i--){
+        let y=0;
+        let no = "box"+i+"_back";
+        document.getElementById(no).style.zIndex=values[y];
+        y++;
+      }
+
     }
 }
