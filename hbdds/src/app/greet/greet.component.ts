@@ -7,14 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreetComponent implements OnInit {
   show_front : boolean;
+  show : number;
   page: BigInteger;
-  constructor() {  }
+  constructor() {  
+    this.show_front = true;
+  }
 
   ngOnInit(): void {
     show_front : true;
+    this.show = 0;
   }
   flip() {
     this.show_front = !this.show_front;
+    this.show = 0;
   }
   
    container_move(){
@@ -43,6 +48,17 @@ export class GreetComponent implements OnInit {
       document.getElementById(back).style.transform = document.getElementById(back).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
       this.sort_f(page);
     }
+    move_1(){
+      if(this.show < 2){
+        console.log(this.show_front);
+        this.show += 1;
+        this.container_move();
+      }
+      else{
+        this.ngOnInit();
+      }
+
+    }
 
     sort_r (page){
       for (let i = 0; i < page; i++) {
@@ -62,8 +78,6 @@ export class GreetComponent implements OnInit {
         let y=0;
         let no_1 = "box"+i;
         let no = no_1+"_back";
-        console.log(no);
-        console.log(values[y]);
         document.getElementById(no).style.zIndex=values[y];
         y++;
       }
