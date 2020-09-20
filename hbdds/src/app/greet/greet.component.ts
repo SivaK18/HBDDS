@@ -32,7 +32,6 @@ export class GreetComponent implements OnInit {
     open_card_2_r(page){
       var front = "box" + page;
       var back = front + "_back"
-      console.log(front);
       document.getElementById(front).style.transform = document.getElementById(front).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
       document.getElementById(back).style.transform = document.getElementById(back).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
       //this.sort_f(page);
@@ -40,7 +39,6 @@ export class GreetComponent implements OnInit {
     open_card_2_f(page){
       var front = "box" + page;
       var back = front + "_back"
-      console.log(front);
       document.getElementById(front).style.transform = document.getElementById(front).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
       document.getElementById(back).style.transform = document.getElementById(back).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
       this.sort_f(page);
@@ -48,7 +46,7 @@ export class GreetComponent implements OnInit {
 
     sort_r (page){
       for (let i = 0; i < page; i++) {
-        console.log ("page" + i);
+        
       }
     }
     sort_f(page){
@@ -62,7 +60,10 @@ export class GreetComponent implements OnInit {
       console.log(values);
       for (let i = page; i > 0; i--){
         let y=0;
-        let no = "box"+i+"_back";
+        let no_1 = "box"+i;
+        let no = no_1+"_back";
+        console.log(no);
+        console.log(values[y]);
         document.getElementById(no).style.zIndex=values[y];
         y++;
       }
