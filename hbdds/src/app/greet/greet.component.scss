@@ -45,8 +45,6 @@
   position: absolute;
   top:0px; 
   left: 0px;
-  background:url(../../assets/img/index.jpg) center no-repeat fixed;
-  background-size: cover;
 }
 div#box1{
   background: url(https://s-media-cache-ak0.pinimg.com/736x/f0/36/f5/f036f5db887f99c0e2f1c0b7aac90f22.jpg) !important;
@@ -57,7 +55,8 @@ div#box1{
 }
 
 div#box1_back{
-  
+  background:url(../../assets/img/2024_/swe/raees.jpg) center no-repeat fixed;
+  background-size: cover;
   transform: rotate3d(0, 1, 0, 0deg);
   z-index: 0;
 }
@@ -74,6 +73,8 @@ div#box2_back{
   }
 
 div#box2{
+  background:url(../../assets/img/2024_/dharu/ragavi.jpg) center no-repeat fixed;
+  background-size: cover;
   transform: rotate3d(0, 1, 0, 0deg);
   -webkit-backface-visibility: hidden;
   z-index: 90;
