@@ -32,8 +32,13 @@ export class GreetComponent implements OnInit {
     open_card_2(page){
       var front = "box" + page;
       var back = front + "_back"
-      console.log(front);
+      var page_before = page -1 ;
+      var back_1 = "box" + page_before + "_back"
+      
       document.getElementById(front).style.transform = document.getElementById(front).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
       document.getElementById(back).style.transform = document.getElementById(back).style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
+      var Z = document.getElementById(back).style.zIndex;
+      console.log(Z);
+      //document.getElementById(back_1).style.zIndex = "-100"
     }
 }
